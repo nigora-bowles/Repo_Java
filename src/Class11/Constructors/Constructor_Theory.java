@@ -7,8 +7,9 @@ public class Constructor_Theory {
     String addr;
     String phone;
 
-    public Constructor_Theory() {
-        System.out.println("Inside no parameter constructor");
+
+    public Constructor_Theory(String name) {
+        System.out.println("Inside no parameter constructor" + name);
     }
 
 
@@ -23,20 +24,26 @@ public class Constructor_Theory {
     }
 
     /**
-     * Constructor:
-     *  It's a special method
-     *  1. it MUST has the same name as of the class.
-     *  2. it cannot have any return type not even void.
+     * Constructor: It's a special method.
+     *  1. It has SAME name as of its class.
+     *  2. It DOES NOT return anything, not even VOID. (It cannot have any return type).
+     *  3. It will execute AUTOMATICALLY, when we create object of the class.
+     *      For normal method --> we use object to execute it.
+     *      For constructor --> constructor method will execute AUTOMATICALLY, when we create object.
      *
-     *  When we create an object of the class,
-     *      the constructor-method executes AUTOMATICALLY.
+     *  Syntax:
+     *  public <SAME NAME AS OF CLASS>() {
+     *      // code
+     *  }
      *
-     *  Constructor can be parameterized (or arguments).
+     *  ----------------
      *
-     *  There can be multiple constructors in a class.
-     *      This is called 'Constructor Overloading'.
-     *
-     *
+     *  1. Constructor can be public, private or protected.
+     *  2. Constructor can have arguments as well
+     *  3. There can be more than one Constructor in a class. This is called 'Constructor Overloading'.
+     *  4. when there is no constructor defined by the user, then
+     *      while creating the object Java creates a default constructor (constructor with no parameter and no code).
+     *  5. If user defines a constructor; then Java never creates a default constructor.
      *
      */
 

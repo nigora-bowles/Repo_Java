@@ -10,6 +10,9 @@ public class String_Concept_p2 {
          *      and end (after the last character) of the string value
          *
          * Method: trim()
+         *
+         * This method will NOT change the original value,
+         *      it will replace the data, and return to new string.
          */
         String cityName = "       New york     City    IN the     ToWN     of USA        .      ";
         System.out.println("#" + cityName + "#");
@@ -20,6 +23,8 @@ public class String_Concept_p2 {
         /**
          * to fetch a portion from a string using index values.
          * Method: subString()
+         *
+         * Returns: String
          *
          * "New york City IN the ToWN of USA"
          *
@@ -55,6 +60,8 @@ public class String_Concept_p2 {
         /**
          *  to cut the string value from a specific point into multiple strings
          *  Method: split()
+         *
+         *  Returns: String[]
          */
         // cityName = "New york City IN the ToWN of USA";
         String[] afterSplitBy_o = cityName.split("o");  // "New y" , "rk City IN the T" , "WN ", "f USA"

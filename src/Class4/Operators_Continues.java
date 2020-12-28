@@ -14,6 +14,8 @@ public class Operators_Continues {
          *      if creditScore>700, then mortgage=1.1
          *      else mortgage=2.0
          *
+         * Assign tVar1 = 10 if tVar2>20 else assign tVar1 = 5
+         *
          * Syntax:
          * int var = condition?trueValue:falseValue
          *

@@ -53,6 +53,8 @@ public class Operators {
         int divRes = num2/3; // int/int -> int (20/3 -> 6)
                              // double/int -> double
                              // int/double -> double
+        // all number are int -> result will be int
+        // any one of the numbers is double -> result will be double
         System.out.println("divRes = " + divRes);
 
         double divRes1 = num2/3; // 20/3 = 6  -> 6.0
@@ -67,6 +69,13 @@ public class Operators {
         // 11/4 -> 2 (3)
         /**
          * % -> Modulus
+         *
+         *
+         * divide 13/3 -> 4 (remaining = 1)
+         *
+         * divide 16/7 -> 2 (remaining = 2)
+         *
+         * divide 9/3 ->  3 (remaining = 0)
          */
         System.out.println("40 % 5 -> " + 40%5); // 0
         System.out.println("20 % 3 -> " + 20%3); // 2

@@ -6,24 +6,42 @@ import java.io.FileInputStream;
 public class Theory {
 
     /**
+     * Exceptions: Unhandled situations
      *
-     * Exceptions
-     *      CompileTime Exception
-     *          InterruptedException
-     *          FileNotFoundException
-     *      RunTime Exception
-     *          ArrayIndexOutOfBoundsException
+     * Types:
+     *  1. Run-time Exception: ArrayIndexOutOfBoundException, StringIndexOutOfBoundsException
+     *  2. Compile-time Exception: InterruptedException, FileNotFoundException
+     *
+     *  How to handled an exception:
+     *  1. use "throws" keyword
+     *  2. use try-catch block
+     *
+     *  the code which can throw exception, we put in try block.
+     *  and the exception will be caught in respective catch block.
      *
      * Exception Class - Parent Class of all exceptions
+     *
      *
      * How to handle exception: using try-catch block
      *
      * try {
-     *     // code which can throw exception
-     * } catch() {     // one catch block should catch only one exception
-     *     // code to execute in case of exception
+     *      // code which can throw exception
+     * } catch(Exception-1) {     // one catch block should catch only one exception
+     *      // code to execute in case of exception
+     * } catch (Exception-2) {
+     *      // code to execute in case of exception
      * }
      *
+     * finally:
+     *  It's a block associated with try-catch block.
+     *  Code in the block will always execute irrespective of exception.
+     *  --> There can be only ONE finally block with every try-catch block.
+     *
+     *  finally vs final
+     *  finally: it block related to try-catch.
+     *  Code in the block will always execute irrespective of exception.
+     *
+     *  final: it's a keyword to create constant variable.
      *
      */
     int b=10;

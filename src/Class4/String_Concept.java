@@ -24,21 +24,31 @@ public class String_Concept {
          * to convert entire string value in lowercase
          * Method: tolowercase()
          *
-         * The value in original will not change
+         * This method will NOT change the original value,
+         *      it will replace the data, and return to new string.
+         */
+
+        /*
+            converting the value in cityName variable in lowercase
+            and, storing the all-lowercase value in cityNameInLowerCase variable
+                KEEPING the original value of cityName as it is.
          */
         String cityNameInLowerCase = cityName.toLowerCase();
         System.out.println("cityName in lowercase: " + cityNameInLowerCase); // new york city
         System.out.println("cityName: " + cityName); // New York City
 
-        // convert cityName into lowercase and store new value in cityName
         // cityName = cityName.toLowerCase();
-        // System.out.println("cityName: " + cityName); // new york city
+        /*
+            converting the value in cityName variable in lowercase
+            and, replacing the original value of cityName with the all-lowercase value
+         */
 
         /**
          * to convert entire string value in uppercase
          * Method: toUppercase()
          *
-         * The value in original will not change
+         * This method will NOT change the original value,
+         *      it will replace the data, and return to new string.
          */
         String cityNameInUpperCase = cityName.toUpperCase();
         System.out.println("cityName in uppercase: " + cityNameInUpperCase); // NEW YORK CITY
@@ -47,6 +57,8 @@ public class String_Concept {
         /**
          * For comparison, when we need to verify if two strings are identical
          * Method: equals()
+         *
+         * Returns: boolean
          *
          * String abc = "New York";
          * String def = "New York city";
@@ -61,6 +73,8 @@ public class String_Concept {
         /**
          * For comparison, when we need to verify if two strings have same value
          * Method: equalsIgnoreCase()
+         *
+         * Returns: boolean
          */
         boolean isEqualsIgnoreCase = cityName.equalsIgnoreCase(cityNameInUpperCase);
         System.out.println("is " + cityName + " equals (ignore case) to " + cityNameInUpperCase + ": " + isEqualsIgnoreCase); // true
@@ -68,12 +82,14 @@ public class String_Concept {
         /**
          * to find if a particular sequence is present in the String
          * Method: contains()
+         *
+         * Returns: boolean
          */
         boolean isContains_new = cityName.contains("new");  // cityName = New York City
         System.out.println("Does " + cityName + " contain 'new': " + isContains_new);   // false
 
         /**
-         * verify if cityName contains "nEw"    // cityName = New York City
+         * Task: verify if cityName contains "nEw"    // cityName = New York City
          * Note: pls ignore case
          * Expected ans: true
          */
@@ -87,8 +103,10 @@ public class String_Concept {
         /**
          * to replace in string
          * Method: replace
+         *
          * It will replace all instances
-         * The value in original will not change
+         * This method will NOT change the original value,
+         *      it will replace the data, and return to new string.
          */
         // cityName = "New York CitY";
         String cityNameReplace_Y_z = cityName.replace('Y', 'Z'); // New York City
@@ -111,7 +129,7 @@ public class String_Concept {
         System.out.println("In '" + cityName + "' char at index 7 is: " + charAtIndex7);
 
         /**
-         * Write a code to print the char present at last index of the string.
+         * Task: Write a code to print the char present at last index of the string.
          * String hello = "Hello Worldwide";
          * char lastIndexChar;
          * // code
@@ -167,6 +185,8 @@ public class String_Concept {
         /**
          * To find if the String starts with the given value
          * Method: startsWith
+         *
+         * Returns: boolean
          */
         boolean cityNameStartsWith_ne = cityName.startsWith("ne");  // New york City IN the ToWN
         System.out.println("does '" + cityName + "' start with 'ne'?: " + cityNameStartsWith_ne); // false
@@ -178,6 +198,8 @@ public class String_Concept {
         /**
          * To find if the String ends with the given value
          * Method: endsWith
+         *
+         * Returns: boolean
          */
         boolean cityNameEndsWith_e_ToWN = cityName.endsWith("e ToWN");
         System.out.println("does '" + cityName + "' ends with 'e ToWN'? : " + cityNameEndsWith_e_ToWN);   // true

@@ -3,21 +3,16 @@ package Class1;
 public class Datatypes_NewName {
     public static void main(String[] args) {
         /**
-         * Numbers (whole/decimal)
-         *      whole
-         *          byte, short, int, long
-         *      decimal
-         *          float, double
+         * numbers
+         *      whole -> byte, short, int, long
+         *      decimals -> float, double
          *
-         * alphabets/characters/letters/words/sentences
-         *      single character
-         *          char
-         *      multi-character
-         *          String (non-primitive)
+         * text
+         *      single-letter -> char
+         *      multiple-letters -> String
          *
-         * yes/no (true/false)
-         *      boolean
-         *
+         * yes/no
+         *      true/false -> boolean
          *
          *
          * How many datatypes we have in Java?

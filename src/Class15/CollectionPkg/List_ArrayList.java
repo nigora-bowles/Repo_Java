@@ -1,6 +1,8 @@
 package Class15.CollectionPkg;
 
 import java.util.ArrayList;
+import java.util.Arrays;
+import java.util.Collections;
 import java.util.List;
 
 public class List_ArrayList {
@@ -139,7 +141,45 @@ public class List_ArrayList {
         places.add(100);    // Integer  Object
         places.add(true);   // Boolean  Object
 
-        System.out.println(places);
+        System.out.println("All datatype list: " + places);
+
+        //create arraylist using array
+        String[] namesArray = {"hello", "peace", "joy", "grow"};
+
+        // Thread.sleep(2000);
+
+        //method-1 --> Say this 1st in job interview
+        List<String> method2List = new ArrayList<>();
+        for (String name : namesArray) {
+            method2List.add(name);
+        }
+        System.out.println("Size of method2List: " + method2List.size());
+        System.out.println("method2List: " + method2List);
+
+
+        //method-1 --> Say this 2nd in job interview
+        List<String> method1List = Arrays.asList(namesArray);
+        System.out.println("Size of method1List: " + method1List.size());
+        System.out.println("method1List: " + method1List);
+
+
+        //method-3 --> Say this 3rd in job interview
+        List<String> method3List = new ArrayList<>();
+        Collections.addAll(method3List, namesArray);
+        System.out.println("Size of method3List: " + method3List.size());
+        System.out.println("method3List: " + method3List);
+
+
+        // ** create array using arraylist **
+        List<Integer> ab = new ArrayList<>();
+        ab.add(2);
+        ab.add(5);
+
+        Integer[] abArray = ab.toArray(new Integer[0]);
+
+        System.out.println(abArray);
+        System.out.println("Length of Array: " + abArray.length);
+        System.out.println("Array after conversion: " + Arrays.toString(abArray));
 
 
 

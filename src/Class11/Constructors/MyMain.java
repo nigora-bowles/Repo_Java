@@ -7,7 +7,7 @@ public class MyMain {
 
 
         // Create object of Constructor_Theory
-        Constructor_Theory abc = new Constructor_Theory();
+        Constructor_Theory abc = new Constructor_Theory("hello");
 
 
 
