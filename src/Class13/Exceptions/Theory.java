@@ -37,11 +37,28 @@ public class Theory {
      *  Code in the block will always execute irrespective of exception.
      *  --> There can be only ONE finally block with every try-catch block.
      *
-     *  finally vs final
-     *  finally: it block related to try-catch.
-     *  Code in the block will always execute irrespective of exception.
+     * --> As soon an exception occurs inside the try-block,
+     *      java will come out of the try-block, and
+     *      go inside the catch-block which has
+     *      capability catch the exception.
+     *      --> And, does not go back in the try block.
      *
+     *
+     * finally vs final:
      *  final: it's a keyword to create constant variable.
+     *
+     * In which situation you should use finally block:
+     *  you want to read data from excel
+     *  you want to read/write to database
+     *
+     * try {
+     *      // code to establish with them
+     *      // code to read/write on external system
+     * } catch() {
+     *      // code to display error in case of exception
+     * } finally {
+     *      // code to close the connection with external system
+     * }
      *
      */
     int b=10;

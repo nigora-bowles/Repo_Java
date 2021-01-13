@@ -44,6 +44,11 @@ public class Constructor_Theory {
      *  4. when there is no constructor defined by the user, then
      *      while creating the object Java creates a default constructor (constructor with no parameter and no code).
      *  5. If user defines a constructor; then Java never creates a default constructor.
+     *  6. When do we create a private Constructor?
+     *      when we DO-NOT want the user to create object of that class.
+     *      and, all methods in such class is 'static'.
+     *      eg: we use private constructors in the helper/util files
+     *      in other words, a file contains code to read excel-sheet, to take screenshot
      *
      */
 
